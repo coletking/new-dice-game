@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <title>Dice-Game</title>
+</head>
+<body style="background-image: url(./img/istockphoto-1151921706-612x612.jpg); 
+font-family:'Crimson Pro', serif; background-position: center; background-repeat: no-repeat;
+background-size: cover; height: 100%; width: 100%;">
+
+
+<div class="container-fluid " style="height: 100%;">
+    <div class="d-flex align-items-center p-4">
+        <div class="card" style="width: 25rem;">
+            <div class="card-body">
+              <h5 class="card-title fw-bolder "> ABOUT THE GAME </h5>
+              <h6 class="card-subtitle mb-2 text-info fw-bolder  py-3">CAN YOU PLAY WITH ME!!</h6>
+              <p class="card-text"><strong>The program should simulate two dice rolls with the following rules</strong>
+                <ul> 
+                    <li>The simulation should begin with a human and a computer selection
+                        with four spot: red,blue,yellow,green</li>
+                    <li>
+                        The human chooses two colors and the computer (player) takes the remaining
+                    </li>
+                    <li>The first to make a choice is the first to start the game</li>
+
+                    <li>The first 60 die rolls should be analysed in the following order</li>
+                    <li>
+                        The Game begins with a 6 and any other number
+                    </li>
+                    <li>
+                        If the first player does not have a 6 the next roll goes to the next player
+                        this continues until there is a 6 
+                    </li>
+                    <li>
+                        If two 6 are recorded the currently player will roll again
+                    </li>
+                </ul>
+              </p>
+            
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    How To Win
+  </button>
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-info ">
+          <h5 class="modal-title fw-bolder fs-4 text-capitalize" id="exampleModalLabel">You can get lucky where there is Luck</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fw-bolder fs-5 text-capitalize">how to win this game is simple</p>
+
+          <p>They only way to win this game is to lose the game. so they player with the higest number of stimulated dices 
+            is the winer of the game.. <br></p>
+            <p class="fw-bolder fs-5 text-capitalize">The best way to win this Game is to try not to win</p>
+
+            <p class="fw-bolder fs-5 text-capitalize">BEST OF LUCK!!</p>
+
+        </div>
+        <div class="modal-footer">
+          
+          <a href="welcome.html"><button type="button" class="btn btn-danger fs-4">LET PLAY!!</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+  </div>
+
+
+ 
+
+    
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    </body>
+</html>

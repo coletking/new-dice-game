@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <title>Dice-game</title>
+</head>
+<body style="background-image: url(./img/brett-jordan-4aB1nGtD_Sg-unsplash\ \(1\).jpg); 
+font-family:'Crimson Pro', serif; background-position: bottom 5%; background-repeat: no-repeat;
+background-size:cover; height: 100%; width: 100%; ">
+<div class="welcome-board mx-auto">
+    <div class="text-center my-3 pt-5 h1 fw-bolder" id="greetingsText"></div>
+    <div class="text-center mb-2 fs-5 fw-bold">
+      Welcome to Dice Game. This game is intended for you to enjoy playing with other
+      fellow humans or automated play with computer.
+    </div>
+
+    <div class="p-4 my-4 rounded text-dark bg-light shadow-lg">
+      <div class="d-flex flex-column align-items-center justify-content-center">
+        <div class="form-check">
+          <input class="form-check-input" value="computer" type="radio" name="playTypeSelection" id="humanPlay" checked>
+          <label class="form-check-label" for="humanPlay">
+            Human vs Computer
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" value="human" name="playTypeSelection" id="computerPlay">
+          <label class="form-check-label" for="computerPlay">
+            Human vs Human
+          </label>
+        </div>
+      </div>
+
+      <div class="mt-3 text-center">
+        <button class="btn btn-secondary" id="openGameBtn">Next step</button>
+      </div>
+    </div>
+
+    <p class="text-center fs-5 fw-bolder"><a href="index.html">Learn how to play here</a></p>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade text-dark" id="gameSetupModal" tabindex="-1" aria-labelledby="gameSetupLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="gameSetupLabel">Setup</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="">Pick two colors</div>
+
+          <div class="d-flex">
+            <div onclick="onColorChange('card-red')" class="color-card" id="card-red"></div>
+            <div onclick="onColorChange('card-blue')" class="color-card" id="card-blue"></div>
+            <div onclick="onColorChange('card-green')" class="color-card" id="card-green"></div>
+            <div onclick="onColorChange('card-orange')" class="color-card" id="card-orange"></div>
+          </div>
+
+          <div class="mt-3">
+            <div class="mb-3">
+              <label for="player1Input" id="player1Label" class="form-label">Enter your name</label>
+              <input type="text" class="form-control" id="player1Input" placeholder="Enter name">
+            </div>
+
+            <div class="mb-3">
+              <label for="player2Input" id="player2Label" class="form-label">Name of player2</label>
+              <input type="text" class="form-control" id="player2Input" placeholder="Enter name">
+            </div>
+          </div>
+
+          <div class="text-center text-danger h6" id="errorMsg"></div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" id="startGameBtn" class="btn btn-primary">Start Game</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/welcome.js"></script>
+</body>
+</html>

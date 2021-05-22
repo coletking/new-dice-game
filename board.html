@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/board.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <title>GAME-START</title>
+</head>
+<body class="text-white" style="background-image: url(./img/photo-1569605612461-7ad0dbe3ef4c.jfif); 
+font-family:'Crimson Pro', serif; background-position: center 55%; background-repeat: no-repeat;
+background-size:cover;">
+        <div class="container">
+          <div class="text-center mb-3 mt-5">
+            <div class="h2" id="progressTxt">Game in progress...</div>
+          </div>
+      
+          <div class="game-board mx-auto my-2 border shadow-lg rounded bg-light text-dark">
+            <div class="player-section d-flex flex-row justify-content-between">
+              <div class="player-item" id="player1Container">
+                <img src="img/girl.png" alt="" class="mb-2">
+                <div class="h6" id="player1Name"></div>
+                <div class="score-card badge bg-secondary" id="player1Badge">
+                  <span>Score: </span>
+                  <span id="playerScore1">0</span>
+                </div>
+                <div class="mt-2 color-card d-flex justify-content-center">
+                  <div class="color1"></div>
+                  <div class="color2"></div>
+                </div>
+              </div>
+      
+              <div class="h1">
+                <div class="mt-3" id="diceRollCountElem">0</div>
+              </div>
+      
+              <div class="player-item" id="player2Container">
+                <img src="img/man (1).png" alt="" class="mb-2">
+                <div class="h6" id="player2Name"></div>
+                <div class="score-card badge bg-secondary" id="player2Badge">
+                  <span>Score: </span>
+                  <span id="playerScore2">0</span>
+                </div>
+                <div class="mt-2 color-card d-flex justify-content-center">
+                  <div class="color1"></div>
+                  <div class="color2"></div>
+                </div>
+              </div>
+            </div>
+            <hr>
+      
+            <div id="gameResult" class="text-center d-none py-5 px-3">
+              <div id="gameResultText" class="h3 mb-4"></div>
+      
+              <a class="btn btn-info" href="../welcome/welcome.html">Back to Home</a>
+            </div>
+      
+            <div id="gamePlay">
+              <div class="dice">
+                <ol class="die-list even-roll" data-roll="1" id="die-1">
+                  <li class="die-item" data-side="1">
+                    <span class="dot"></span>
+                  </li>
+                  <li class="die-item" data-side="2">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </li>
+                  <li class="die-item" data-side="3">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </li>
+                  <li class="die-item" data-side="4">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </li>
+                  <li class="die-item" data-side="5">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </li>
+                  <li class="die-item" data-side="6">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </li>
+                </ol>
+                <ol class="die-list odd-roll" data-roll="1" id="die-2">
+                  <li class="die-item" data-side="1">
+                    <span class="dot"></span>
+                  </li>
+                  <li class="die-item" data-side="2">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </li>
+                  <li class="die-item" data-side="3">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </li>
+                  <li class="die-item" data-side="4">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </li>
+                  <li class="die-item" data-side="5">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </li>
+                  <li class="die-item" data-side="6">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </li>
+                </ol>
+              </div>
+      
+              <div class="text-center mb-3">
+                <div class="alert alert-info" id="statusActionText">Please wait...</div>
+              </div>
+      
+              <div class="text-center mb-4">
+                <button type="button" class="btn btn-success" id="roleDiceBtn">Roll Dice</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/board.js"></script>
+</body>
+</html>
+
